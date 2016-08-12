@@ -1,0 +1,7 @@
+ZeFunge quirks
+'k' completely ignores ' ', ';', '"', 'k', and non-instructions (unprintables)
+'k' resets IP to prior position BEFORE each iteration
+'{' sets the new storage offset to 'position + delta', not necessary the next position to be executed
+'y' counts by item, not by cell, when searching through its own output
+no negative coordinates
+world size remains unchanged while running, and always reasonably finite
